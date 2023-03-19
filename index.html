@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+  <style>
+    #project-header {
+      font-family: 'Great Vibes', cursive;
+    }
+
+    .form-label {
+      font-family: 'Cinzel', serif;
+    }
+  </style>
+
+  <title>Movie Project</title>
+</head>
+
+<body class="bg-light">
+  <div class="container py-5">
+    <h1 id="project-header" class="text-center my-5">Film Project</h1>
+    <div class="card">
+      <div class="card-body">
+        <form id="film-form" class="row justify-content-between">
+          <div class="col-md-6 my-1">
+            <label class="form-label" for="film-name">Film Name: </label>
+            <input type="text" class="form-control my-1" id="title">
+          </div>
+          <div class="col-md-6 my-1">
+            <label class="form-label" for="director">Director: </label>
+            <input type="text" class="form-control my-1" id="director">
+          </div>
+          <div class="col-md-12 my-1">
+            <label class="form-label" for="film-image-url">Film Image Url: </label>
+            <input type="text" class="form-control my-1" id="url">
+          </div>
+          <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-success my-2 mt-4">Add Movie</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <hr>
+    <div class="d-flex justify-content-end">
+      <button class="btn btn-warning" id="clear-films">Clear All Movies</button>
+    </div>
+    <hr>
+
+    <div id="films" class="row film-cards">
+      <!-- <div class="card film-card col-md-3">
+        <img src="" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Lord Of The Rings</h5>
+          <p class="card-text">Peter Jackson</p>
+          <a href="#" id="delete-film" class="btn btn-danger">Delete Movie</a>
+        </div>
+      </div> -->
+    </div>
+  </div>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/ui.js"></script>
+  <script src="./js/storage.js"></script>
+  <script src="./js/film.js"></script>
+
+  <script src="./js/project.js"></script>
+
+</body>
+
+</html>
